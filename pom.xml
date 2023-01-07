@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+  ~ Copyright (c) Message4U Pty Ltd 2014-2018
+  ~
+  ~ Except as otherwise permitted by the Copyright Act 1967 (Cth) (as amended from time to time) and/or any other
+  ~ applicable copyright legislation, the material may not be reproduced in any format and in any way whatsoever
+  ~ without the prior written consent of the copyright owner.
+  -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.messagemedia.numbers.support</groupId>
+    <artifactId>parent</artifactId>
+    <version>2.0.0-SNAPSHOT</version>
+    <name>Numbers Service Support Parent POM</name>
+    <packaging>pom</packaging>
+    <parent>
+        <groupId>com.messagemedia.framework</groupId>
+        <artifactId>framework</artifactId>
+        <version>1.3.2-322</version>
+    </parent>
+
+    <scm>
+        <connection>scm:git:${release.git.url}</connection>
+        <developerConnection>scm:git:${release.git.url}</developerConnection>
+    </scm>
+
+    <properties>
+        <release.git.url>git@bitbucket.org:MessageMedia/numbers-service-support.git</release.git.url>
+    </properties>
+
+    <modules>
+        <module>numbers-service-client</module>
+    </modules>
+
+</project>
